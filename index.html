@@ -63,6 +63,15 @@
     gtag('js', new Date());
     gtag('config', 'G-4YX9GH7JQR');
   </script>
+  <script>
+  window.addEventListener("DOMContentLoaded", function () {
+    if (window.location.hash && history.replaceState) {
+      const noHashURL = window.location.href.split('#')[0];
+      history.replaceState(null, null, noHashURL);
+    }
+  });
+</script>
+
 
   <style>
     :root {
@@ -399,7 +408,7 @@
 </main>
 
 <footer>
-  &copy; 2025 SKI's Lawn Care LLC. All rights reserved.<br><br>
+  &copy; 2025 Skis Lawn Care LLC. All rights reserved.<br><br>
   <div class="socials">
     <a href="https://www.facebook.com/skislawncare/">Facebook</a> |
     <a href="#">Instagram</a> |
