@@ -48,17 +48,14 @@
     "sameAs": [
       "https://www.facebook.com/skislawncare",
       "https://g.co/kgs/Md315x7"
-    ]
+    ],
+    "inLanguage": "en"
   }
   </script>
 
-  <!-- Favicon -->
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-
-  <!-- AOS Animation Library -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4YX9GH7JQR"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -67,7 +64,6 @@
     gtag('config', 'G-4YX9GH7JQR');
   </script>
 
-  <!-- Main Styles -->
   <style>
     :root {
       --primary-color: #2e7d32;
@@ -263,10 +259,39 @@
       text-decoration: none;
       font-weight: bold;
     }
+
+    button[type="submit"] {
+      background-color: #ffffff;
+      color: var(--primary-color);
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      border: 2px solid #ffffff;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      justify-content: center;
+      min-height: 44px;
+    }
+
+    .button-icon {
+      font-size: 1rem;
+    }
+
+    .button-text {
+      font-weight: bold;
+    }
+
+    .button-loader {
+      font-size: 0.9rem;
+      color: var(--secondary-color);
+    }
   </style>
 </head>
 <body>
-
 <header>
   <div class="pay-now-button">
     <a href="https://buy.stripe.com/bIY4iubCy0qJaUU7ss" target="_blank"><strong>Pay Now</strong> <span style="font-size: 0.8rem; color: var(--secondary-color);">via Stripe.com</span></a>
@@ -348,11 +373,16 @@
     <h2>Get in Touch</h2>
     <div class="contact-box">
       <form action="https://formspree.io/f/xpwrlbbb" method="POST" style="display: flex; flex-direction: column; gap: 1rem; max-width: 400px; margin: auto;">
-        <input type="text" name="_gotcha" style="display:none">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
+  <input type="text" name="_gotcha" style="display:none">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  <button type="submit" id="sendButton">
+    <span class="button-icon">📩</span>
+    <span class="button-text">Send Message</span>
+    <span class="button-loader" style="display: none;">⏳ Sending...</span>
+  </button>
+</form>
       </form>
       <p><strong>Email (Preferred):</strong> <a href="mailto:skislawncarellc@gmail.com">skislawncarellc@gmail.com</a></p>
       <p><strong>Phone:</strong> <a href="tel:+13219848736">(321) 984-8736</a></p>
