@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request a Quote | Ski's Lawn Care, LLC</title>
+  <meta name="description" content="Get a free lawn care or landscaping quote from Ski's Lawn Care, serving Barefoot Bay, FL.">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    :root {
+      --primary-color: #2e7d32;
+      --secondary-color: #66bb6a;
+      --bg-light: #f9fff9;
+      --text-color: #2e2e2e;
+      --card-bg: #fff;
+      --font-family: 'Segoe UI', sans-serif;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-family);
+      background: linear-gradient(to bottom right, var(--bg-light), #e8f5e9);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      text-align: center;
+      color: var(--primary-color);
+      margin: 1.5rem 0 1rem;
+    }
+
+    main {
+      max-width: 600px;
+      margin: 2rem auto;
+      background: var(--card-bg);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px var(--shadow);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.75rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      background-color: #ffffff;
+      color: var(--primary-color);
+      padding: 0.75rem;
+      font-weight: bold;
+      border: 2px solid #ffffff;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    button:hover {
+      background-color: var(--secondary-color);
+      color: white;
+      border-color: transparent;
+    }
+
+    .back-link {
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+
+    .back-link a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #dcedc8;
+      padding: 2rem 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Ski's Lawn Care, LLC</h1>
+  <h5>Reliable Year-Round Lawn & Landscaping in Barefoot Bay, FL</h5>
+</header>
+
+<main data-aos="fade-up">
+  <h2>Request a Free Quote</h2>
+  <form action="https://formspree.io/f/xpwrlbbb" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <input type="tel" name="phone" placeholder="Your Phone (Optional)" />
+    <textarea name="message" rows="5" placeholder="Describe the service you need (e.g., mowing, trimming, cleanup, etc.)" required></textarea>
+    <button type="submit">📩 Send Quote Request</button>
+  </form>
+
+  <div class="back-link">
+    <p><a href="index.html">← Back to Home</a></p>
+  </div>
+</main>
+
+<footer>
+  &copy; 2025 Ski's Lawn Care, LLC. All rights reserved.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+</script>
+
+</body>
+</html>
