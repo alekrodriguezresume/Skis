@@ -102,9 +102,19 @@
     }
 
     .pay-now-button {
-      position: absolute;
-      top: 1.5rem;
-      right: 1.5rem;
+      display: flex;
+      justify-content: center;
+      margin: 1rem 0;
+    }
+    
+    @media (min-width: 768px) {
+      .pay-now-button {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        justify-content: flex-end;
+        margin: 0;
+      }
     }
 
     .pay-now-button a {
